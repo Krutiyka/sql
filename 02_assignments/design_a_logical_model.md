@@ -26,6 +26,7 @@ Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
 
 Highlight at least two differences between it and your ERD. Would you change anything in yours?
 ```
+AdventureWorks is much bigger and more complex than my ERDs. In my ERDs there is no abstraction layer for Employees (Person schema). Customer, Employee and Vendor tables can be changed to slowly changing dimensions schema.
 
 Your answer... 
 
