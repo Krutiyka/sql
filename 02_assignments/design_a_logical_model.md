@@ -2,21 +2,24 @@
 
 ## Question 1
 Create a logical model for a small bookstore. 📚
+![Question_1](./images/Question_1.png)
 
 At the minimum it should have employee, order, sales, customer, and book entities (tables). Determine sensible column and table design based on what you know about these concepts. Keep it simple, but work out sensible relationships to keep tables reasonably sized. Include a date table. There are several tools online you can use, I'd recommend [_Draw.io_](https://www.drawio.com/) or [_LucidChart_](https://www.lucidchart.com/pages/).
 
 ## Question 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
+![Question_2](./images/Question_2.png)
 
 ## Question 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2?
 
 _Hint, search type 1 vs type 2 slowly changing dimensions._
+![Question_3](./images/Question_3.png)
 
 Bonus: Are there privacy implications to this, why or why not?
 ```
 Your answer...
-```
+``` Type_1: Privacy implications - No. Type_2: Need to implement the DLM (data lifecycle management) process to delete old information/records.
 
 ## Question 4
 Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
@@ -24,7 +27,7 @@ Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
 Highlight at least two differences between it and your ERD. Would you change anything in yours?
 ```
 Your answer...
-```
+```AdventureWorks is much bigger and more complex than my ERDs. In my ERDs there is no abstraction layer for Employees (Person schema). Customer, Employee and Vendor tables can be changed to slowly changing dimensions schema.
 
 # Criteria
 
